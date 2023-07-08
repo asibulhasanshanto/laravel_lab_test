@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get("/books", [App\Http\Controllers\BookController::class, "index"])->name("books.index");
+Route::post("/books", [App\Http\Controllers\BookController::class, "store"])->name("books.store");
 Route::get("/books/create", [App\Http\Controllers\BookController::class, "create"])->name("books.create");
 
 
