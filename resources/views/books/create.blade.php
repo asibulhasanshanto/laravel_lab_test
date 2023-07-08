@@ -22,35 +22,8 @@
 
 <body class="antialiased">
     <div class="container">
-        <h2 class="mt-4">Books</h2>
-        {{-- create a button to create book --}}
-        <a href="{{ route('books.create') }}" class="btn btn-primary mt-4">Create Book</a>
+        <h2 class="mt-4">Create book page </h2>
 
-        <table class="table mt-4">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Price</th>
-                    <th>ISBN</th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-                @foreach ($books as $book)
-                    <tr>
-                        <td>{{ $book->id }}</td>
-                        <td>{{ $book->title }}</td>
-                        <td>{{ $book->author }}</td>
-                        <td>{{ $book->price }}</td>
-                        <td>{{ $book->isbn }}</td>
-                    </tr>
-                @endforeach
-            </tbody>
-
-        </table>
     </div>
 </body>
 

@@ -1,0 +1,6 @@
+1. view books( /books->GET)
+
+
+2. create a book ( /books->POST)
+3. update a book ( /books/:book->PATCH)
+4. delete a book ( /books/:book->DELETE)

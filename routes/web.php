@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get("/books", [App\Http\Controllers\BookController::class, "index"])->name("books.index");
+Route::get("/books/create", [App\Http\Controllers\BookController::class, "create"])->name("books.create");
 
 
 
